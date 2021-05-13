@@ -1,0 +1,49 @@
+.Signup {
+    padding: 60px 0;
+}
+
+.Signup form {
+    color: #e74c3c;
+}
+
+.Signup form .input {
+    padding: 20px;
+    border: 1px solid #e74c3c;
+    color: #e74c3c !important;
+}
+
+.Signup form .input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.Signup form .button {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: #e74c3c;
+    color: white;
+    border-radius: 3px;
+
+    transition: all 0.3s;
+}
+
+.Signup form .button:hover {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: white;
+    color: #e74c3c;
+}
+
+.Signup form .button:focus {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: white;
+    color: #e74c3c;
+}
+
+@media all and (min-width: 480px) {
+    .Signup form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+}

@@ -1,18 +1,80 @@
-.logo {
+.Home .button {
+    padding: 10px;
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: white;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.Home .button:hover {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: white;
+    color: #e74c3c;
+}
+
+.Home .lander {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.Home .lander h1 {
     font-family: "Lobster", cursive;
     color: #e74c3c !important;
     font-size: 5rem;
 }
 
-h1 {
-    text-align: center;
+.Home .lander p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1rem;
 }
 
-.Home .lander {
-    padding: 80px 0;
+.Home .mensagens h2 {
+    font-size: 2rem;
+    padding: 10px 0;
+    color: #e74c3c;
+    font-weight: 800;
 }
 
-.Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+.Home .mensagens .painel .mais {
+    font-size: 0.7rem;
+    margin-top: 50px;
+}
+
+.Home .mensagens .painel .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.Home .mensagens .painel .cards .card {
+    margin: 20px 0;
+    padding: 10px;
+    width: 45%;
+    color: #e74c3c;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 55px -36px black;
+}
+
+.Home .mensagens .painel .cards .card span {
+    margin: 5px;
+}
+
+@media (max-width: 480px) {
+    .Home .mensagens .painel .cards {
+        flex-direction: column;
+    }
+
+    .Home .mensagens .painel .cards .card {
+        margin: 10px 0;
+        width: 100%;
+    }
 }
