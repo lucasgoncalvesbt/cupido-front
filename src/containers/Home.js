@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ListGroup from "react-bootstrap/ListGroup";
 import { useAppContext } from "../libs/contextLib";
 import { onError } from "../libs/errorLib";
 import { API } from "aws-amplify";
@@ -44,14 +43,14 @@ export default function Home() {
                     {mensagens.map(({ mensagemId, content, address, createdAt }) => (
                         <LinkContainer key={mensagemId} to={`/mensagens/${mensagemId}`}>
                             <div className="card" action>
-                                <span className="font-weight-bold">
+                                <span className="font-weight-bold para">
                                     Para: {address}
                                 </span>
-                                <span>
-                                    {content.substr(0, 100)}
-                                </span>
-                                <span className="text-muted">
+                                <span className="text-muted data">
                                     Data de envio: {new Date(createdAt).toLocaleString()}
+                                </span>
+                                <span className="conteudo">
+                                    {content.substr(0, 40)}...
                                 </span>
                             </div>
                         </LinkContainer>
@@ -64,13 +63,9 @@ export default function Home() {
     function renderLander() {
         return (
             <div className="lander container">
-                <h1>
+                <h1>Seja Bem-Vindo ao <br />
                     <span className="logo">Cupido Online</span>
                 </h1>
-                <p className="">Seja Bem Vindo, novo por aqui? Entenda como o site funciona.</p>
-                <LinkContainer to="/instrucoes">
-                    <span className="button">Instruções</span>
-                </LinkContainer>
             </div>
         );
     }

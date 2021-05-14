@@ -48,7 +48,7 @@ function App() {
               Cupido Online
           </Navbar.Brand>
           </LinkContainer>
-          <Navbar.Toggle />
+          <Navbar.Toggle className="button" />
           <Navbar.Collapse className="justify-content-end">
             <Nav activeKey={window.location.pathname}>
               {isAuthenticated ? (

@@ -1,0 +1,46 @@
+.NovaMensagem form {
+    width: 80%;
+    margin: 0 auto;
+    color: #e74c3c;
+}
+
+.NovaMensagem form textarea {
+    height: 300px;
+    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.NovaMensagem form .input {
+    padding: 20px;
+    border: 1px solid #e74c3c;
+    color: #e74c3c !important;
+}
+
+.NovaMensagem form .input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.NovaMensagem form .button {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: #e74c3c;
+    color: white;
+    border-radius: 3px;
+
+    transition: all 0.3s;
+}
+
+.NovaMensagem form .button:hover {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: white;
+    color: #e74c3c;
+}
+
+.NovaMensagem form .button:focus {
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    background: white;
+    color: #e74c3c;
+}

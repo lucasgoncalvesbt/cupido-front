@@ -5,17 +5,13 @@ import NotFound from "./containers/NotFound";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import Mensagens from "./containers/Mensagens";
-import NewNote from "./containers/NewNote";
-import Instrucoes from "./containers/Instrucoes";
+import NovaMensagem from "./containers/NovaMensagem";
 
 export default function Routes() {
     return (
         <Switch>
             <Route exact path="/">
                 <Home />
-            </Route>
-            <Route exact path="/instrucoes">
-                <Instrucoes />
             </Route>
             <Route exact path="/login">
                 <Login />
@@ -24,7 +20,7 @@ export default function Routes() {
                 <Signup />
             </Route>
             <Route exact path="/mensagens/new">
-                <NewNote />
+                <NovaMensagem />
             </Route>
             <Route exact path="/mensagens/:id">
                 <Mensagens />

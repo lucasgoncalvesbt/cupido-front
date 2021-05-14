@@ -1,0 +1,20 @@
+.Mensagens {
+    padding: 30px 10px;
+}
+
+.Mensagens .mensagem {
+    background: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Mensagens .mensagem h4 {
+    color: #e74c3c;
+}
+
+.Mensagens .mensagem p {
+    margin-top: 20px;
+    white-space: pre-line;
+}

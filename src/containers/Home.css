@@ -18,7 +18,7 @@
 }
 
 .Home .lander {
-    padding: 80px 0;
+    padding: 200px 0;
     text-align: center;
 }
 
@@ -51,24 +51,42 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .Home .mensagens .painel .cards .card {
     margin: 20px 0;
     padding: 10px;
     width: 45%;
+    min-height: 100px;
     color: #e74c3c;
     background-color: white;
     cursor: pointer;
-    box-shadow: 0px 0px 55px -36px black;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px -8px black;
+    justify-content: space-between;
+
+    transition: all 0.3s;
+}
+
+.Home .mensagens .painel .cards .card:hover,
+.Home .mensagens .painel .cards .card:focus {
+    border-color: #e74c3c;
 }
 
 .Home .mensagens .painel .cards .card span {
     margin: 5px;
 }
 
+.Home .mensagens .painel .cards .card .data {
+    font-size: 0.7rem;
+}
+
 @media (max-width: 480px) {
+    .Home .lander h1 {
+        font-size: 3rem;
+    }
+
     .Home .mensagens .painel .cards {
         flex-direction: column;
     }
